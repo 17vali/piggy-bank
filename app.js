@@ -11,7 +11,7 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('API Running'));
 
 app.use('/api/auth', require('./routes/api/auth'));
-//app.use('/api/profile', require('./routes/api/profile'));
+app.use('/api/profile', require('./routes/api/profile'));
 //app.use('/api/transactions', require('./routes/api/transactions'));
 app.use('/api/users', require('./routes/api/users'));
 
